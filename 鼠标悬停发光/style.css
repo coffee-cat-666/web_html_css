@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #262626;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    color: #666;
+    background-color: #171515;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+ul li::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #0A82ED;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+ul li:nth-child(1)::before {
+    background-color: #0A82ED;
+}
+
+ul li:nth-child(2)::before {
+    background-color: #0aed83;
+}
+
+ul li:nth-child(3)::before {
+    background-color: #0ac3ed;
+}
+
+ul li:nth-child(4)::before {
+    background-color: #c3ed0a;
+}
+
+ul li:nth-child(5)::before {
+    background-color: #ed0a74;
+}
+
+ul li:hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A82ED;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(1):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A82ED;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(2):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0aed83;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(3):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0ac3ed;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(4):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #c3ed0a;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(5):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #ed0a74;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(1):hover {
+    color: #0A82ED;
+    box-shadow: #0A82ED;
+    text-shadow: #0A82ED;
+}
+
+ul li:nth-child(2):hover {
+    color: #0A82ED;
+    box-shadow: #0A82ED;
+    text-shadow: #0A82ED;
+}
+
+ul li:nth-child(3):hover {
+    color: #0aed83;
+    box-shadow: #0aed83;
+    text-shadow: #0aed83;
+}
+
+ul li:nth-child(4):hover {
+    color: #c3ed0a;
+    box-shadow: #c3ed0a;
+    text-shadow: #c3ed0a;
+}
+
+ul li:nth-child(5):hover {
+    color: #ed0a74;
+    box-shadow: #ed0a74;
+    text-shadow: #ed0a74;
+}
